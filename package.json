@@ -1,34 +1,11 @@
 {
-  "_from": "mongoose-fuzzy-searching-v2",
-  "_id": "mongoose-fuzzy-searching-v2@3.0.2",
-  "_inBundle": false,
-  "_integrity": "sha512-MT1f5ecyjvqloXQJWAH3oqhl9N/Dk/V5ZPh9cB0mZYwy0WIKdpU9quqbRIeFys9B8bzFPUqH1J6mOxB0vtQOog==",
-  "_location": "/mongoose-fuzzy-searching-v2",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "mongoose-fuzzy-searching-v2",
-    "name": "mongoose-fuzzy-searching-v2",
-    "escapedName": "mongoose-fuzzy-searching-v2",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/mongoose-fuzzy-searching-v2/-/mongoose-fuzzy-searching-v2-3.0.2.tgz",
-  "_shasum": "d23abcc4ddae686a715788152c93dbc361686d34",
-  "_spec": "mongoose-fuzzy-searching-v2",
-  "_where": "/Users/maad/Desktop/Neddie/platform",
+  
   "author": {
-    "name": "Akash Gupta",
-    "email": "akash@adias.tech"
+    "name": "Aaron Dasani",
+    "email": "aaron.mike2406@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/techaks/mongoose-fuzzy-searching-v2/issues"
+    "url": "https://github.com/NEDDIE-CO/Custom-Fuzzy-Search"
   },
   "bundleDependencies": false,
   "deprecated": false,
@@ -41,7 +18,7 @@
     "nyc": "^14.1.1",
     "rewire": "^4.0.1"
   },
-  "homepage": "https://github.com/techaks/mongoose-fuzzy-searching-v2",
+  "homepage": "https://github.com/NEDDIE-CO/Custom-Fuzzy-Search",
   "keywords": [
     "mongoose",
     "fuzzy",
@@ -53,7 +30,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "mongoose-fuzzy-searching-v2",
+  "name": "custom-mongoose-fuzzy-searching",
   "peerDependencies": {
     "mongoose": "4.x || 5.x"
   },
@@ -61,5 +38,5 @@
     "coverage": "nyc --reporter=html npm test",
     "test": "mocha ./tests/* -s 0 "
   },
-  "version": "3.0.2"
+  "version": "1.0.0"
 }
