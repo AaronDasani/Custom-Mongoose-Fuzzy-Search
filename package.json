@@ -5,7 +5,7 @@
     "email": "aaron.mike2406@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/NEDDIE-CO/Custom-Fuzzy-Search"
+    "url": "https://github.com/AaronDasani/Custom-Mongoose-Fuzzy-Search"
   },
   "bundleDependencies": false,
   "deprecated": false,
@@ -18,7 +18,7 @@
     "nyc": "^14.1.1",
     "rewire": "^4.0.1"
   },
-  "homepage": "https://github.com/NEDDIE-CO/Custom-Fuzzy-Search",
+  "homepage": "https://github.com/AaronDasani/Custom-Mongoose-Fuzzy-Search",
   "keywords": [
     "mongoose",
     "fuzzy",
