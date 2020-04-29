@@ -1,11 +1,14 @@
 
-## Mongoose Fuzzy Searching
-# A custom Version of the Mongoose Fuzzy Search.
-### A custom fuzzy search that takes user inputs and do a global search in selected fields.
-### Fork from mongoose-fuzzy-searching-v2, link: https://www.npmjs.com/package/mongoose-fuzzy-searching-v2
+## Customize Mongoose Fuzzy Searching
+
+custom-mongoose-fuzzy-searching is simple and lightweight plugin that enables fuzzy searching in documents in MongoDB. 
+
+It takes user inputs (whether it is a word OR a sentence) and do a global search.
+
+# NOTE
+This package was FORK from [mongoose-fuzzy-searching-v2](https://www.npmjs.com/package/mongoose-fuzzy-searching-v2) and customized to add additional features.
 
 
-mongoose-fuzzy-searching-v2 is simple and lightweight plugin that enables fuzzy searching in documents in MongoDB.
 This code is based on [this article](https://medium.com/xeneta/fuzzy-search-with-mongodb-and-python-57103928ee5d).
 
 [![Build Status](https://travis-ci.com/VassilisPallas/mongoose-fuzzy-searching-v2.svg?token=iwmbqGL1Zp9rkA7hmQ6P&branch=master)](https://travis-ci.com/VassilisPallas/mongoose-fuzzy-searching-v2)
@@ -15,14 +18,16 @@ This code is based on [this article](https://medium.com/xeneta/fuzzy-search-with
 ## Features
 
 - [Add **fuzzySearch** method on model](#simple-usage)
+- [Allowing **fuzzy search on a sentence** and not just a word](#Sentence-Fuzzy-Search)
 - [Work with pre-existing data](#work-with-pre-existing-data)
+
 
 ## Installation
 
 Install using [npm](https://npmjs.org)
 
 ```
-npm i mongoose-fuzzy-searching-v2
+npm i custom-mongoose-fuzzy-searching
 ```
 
 ## Usage
@@ -169,6 +174,30 @@ Model.fuzzySearch("jo", { age: { $gt: 18 } }, function(err, doc) {
     console.log(doc);
   }
 });
+```
+## Sentence-Fuzzy-Search
+
+This feature will take a sentence such as (`"apex legend and valorant"`) and split the sentence and return an array like this ( `[apex, legend, and, valorant]` ). The array is then use for the fuzzy search.
+
+```javascript
+
+/* sentence from search bar and with options*/
+Model.fuzzySearch({query:"apex legend and valorant"}, { category: "battle royale", year: 2019 })
+  .then(console.log)
+  .catch(console.error);
+
+/* OR */
+
+Model.fuzzySearch("apex legend and valorant", { category: "battle royale", year: 2019 })
+  .then(console.log)
+  .catch(console.error);
+
+/* sentence from search bar and WITHOUT options*/
+Model.fuzzySearch({query:"apex legend and valorant"})
+  .then(console.log)
+  .catch(console.error);
+
+
 ```
 
 ## Work with pre-existing data
