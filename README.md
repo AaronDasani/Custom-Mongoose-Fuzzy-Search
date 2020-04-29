@@ -1,4 +1,9 @@
-# Mongoose Fuzzy Searching
+
+## Mongoose Fuzzy Searching
+# A custom Version of the Mongoose Fuzzy Search.
+### A custom fuzzy search that takes user inputs and do a global search in selected fields.
+### Fork from mongoose-fuzzy-searching-v2, link: https://www.npmjs.com/package/mongoose-fuzzy-searching-v2
+
 
 mongoose-fuzzy-searching-v2 is simple and lightweight plugin that enables fuzzy searching in documents in MongoDB.
 This code is based on [this article](https://medium.com/xeneta/fuzzy-search-with-mongodb-and-python-57103928ee5d).
